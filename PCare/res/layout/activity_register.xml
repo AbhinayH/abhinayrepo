@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:orientation="vertical"
+ android:background="@drawable/screen2"
+    >
+   
+    
+    <LinearLayout 
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:orientation="vertical"
+    android:layout_marginTop="120dp"
+    >
+       
+    <TextView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Registration"
+       android:textStyle="bold"
+       android:textColor="#3b5998"
+       android:textSize="18dp"
+       
+       />
+   
+        
+   <EditText
+       android:id="@+id/firstName"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:ems="10"
+       android:inputType="textEmailAddress" 
+        android:textColorHint="#3b5998"
+        android:textColor="#3b5998"
+       android:hint="First Name"
+       android:layout_marginTop="15dp"
+       android:layout_margin="5dp" />
+
+   <EditText
+       android:id="@+id/lastName"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:ems="10"
+       android:layout_margin="5dp"
+        android:textColor="#3b5998"
+         android:textColorHint="#3b5998"
+       android:hint="Last Name" />
+   
+   <EditText
+       android:id="@+id/emailId"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:ems="10"
+       android:layout_margin="5dp"
+        android:textColor="#3b5998"
+         android:textColorHint="#3b5998"
+       android:hint="Email Id" />
+   
+   <EditText
+       android:id="@+id/birthDate"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColor="#3b5998"
+       android:layout_margin="5dp"
+       android:textColorHint="#3b5998"
+       android:hint="Expected Date [yyyy-MM-dd]"
+       android:minWidth="20dip"
+       android:onClick="selectBirthDate"
+       android:editable="false"
+        />
+   
+   <!--  <Button
+            android:id="@+id/addReminderScreen_dateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"        
+            android:text="select date"
+             android:textColor="#3b5998"       >
+        </Button>  -->
+        
+  <!--  <TextView
+            android:id="@+id/addReminderScreen_dateTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:minWidth="20dip"
+            android:text=""
+            android:textColor="#3b5998"          
+            android:typeface="serif" >
+        </TextView> -->
+   
+   <EditText
+       android:id="@+id/expectedDate"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColor="#3b5998"
+       android:layout_margin="5dp"
+       android:textColorHint="#3b5998"
+       android:hint="Date of Birth [yyyy-MM-dd]" 
+       android:editable="false"
+       android:onClick="selectExpectedDate"
+       
+         />
+
+   
+
+   <Button
+       android:id="@+id/sendEmail"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:textColor="#fff"
+       android:background="#3b5998"
+       android:text="Register"
+        android:onClick="goToHomePage" />
+   
+   
+    <Button
+       android:id="@+id/temp"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:textColor="#fff"
+       android:background="#3b5998"
+       android:text="Test"
+        android:onClick="temp" />
+   
+   
+</LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+      android:background="@drawable/screen2">
+      
+       
+      <EditText
+       android:id="@+id/firstName"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:ems="10"
+       android:textColor="#000000"
+       android:textColorHint="#000000"         
+       android:hint="Enter your First Name"
+       android:textStyle="bold" />
+     
+     <EditText
+       android:id="@+id/lastName"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:ems="10"
+       android:textColor="#000000"
+       android:textColorHint="#000000"  
+       android:layout_marginTop="100dp" 
+       android:hint="Enter your Last Name"
+       android:textStyle="bold" />
+     
+     <EditText
+       android:id="@+id/emailId"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:ems="10"
+       android:textColor="#000000"
+       android:textColorHint="#000000"
+       android:layout_marginTop="200dp" 
+       android:hint="Enter your Email ID" 
+       android:textStyle="bold"/>
+     
+    
+     <EditText
+       android:id="@+id/phoneNumber"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:ems="10"
+       android:textColor="#000000"
+       android:textColorHint="#000000"
+       android:layout_marginTop="300dp"
+       android:hint="Enter your Phone Number" />
+     
+     
+    
+     <Button
+       android:id="@+id/sendEmail"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="550dp"
+       android:textColor="#fff"
+       android:background="#3b5998"
+       android:text="Register" 
+       android:onClick="goToHomePage"/>
+     
+     
+    
+     
+      
+
+</RelativeLayout> -->

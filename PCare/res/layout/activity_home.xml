@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/homescreen"
+        android:contentDescription="bb" />
+
+    <include
+        android:id="@+id/include1"        
+        layout="@layout/footer" />
+
+    <ImageView
+        android:id="@+id/policy_id"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/include1"
+        android:layout_alignTop="@+id/important_updates_id"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/important_updates_icon"
+        android:contentDescription="bb" />
+
+    <ImageView
+        android:id="@+id/important_updates_id"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_above="@+id/include1"
+        android:layout_alignRight="@+id/include1"
+        android:layout_marginBottom="142dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/health2"
+        android:contentDescription="bb" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/policy_id"
+        android:layout_below="@+id/policy_id"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="2dp"
+        android:text="Work" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/important_updates_id"
+        android:layout_marginRight="35dp"
+        android:text="Health"
+         />
+
+   <!--  <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/policy_id"
+        android:layout_alignParentBottom="true"
+        android:text="Call HR" 
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-18dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:text="Mail HR" 
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/include1"
+        android:text="Did You Know?" 
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentRight="true"/> -->
+
+</RelativeLayout>

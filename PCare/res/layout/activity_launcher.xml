@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pmcare"
+        android:contentDescription="aa" />
+
+   <!--  <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="75dp"
+         android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+        android:text="You are an important part of principal \n family and we would like to stay \n connected. In case you need any assistance \nrelated to pgs, we are just a tap away"
+        android:textColor="#3b5998"
+        android:textSize="15dp" /> -->
+
+    <!-- <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Welcome to Principal"
+        android:textColor="#3b5998"
+        android:textSize="20dp"
+        android:textStyle="bold" /> -->
+        
+       </RelativeLayout>

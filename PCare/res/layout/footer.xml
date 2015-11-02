@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="26dp" >
+
+  <!--   <ImageView
+        android:id="@+id/email"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/email"
+        android:contentDescription="bb"
+        android:onClick="goToEmailScreen" /> -->
+        
+           <ImageView
+        android:id="@+id/email"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/edit_email"
+        android:contentDescription="bb"
+        android:layout_marginLeft="105dp"
+        android:onClick="goToEmailScreen" /> 
+
+    <ImageView
+        android:id="@+id/callHR"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/call3"
+        android:contentDescription="bb"
+        android:onClick="goToCallHRScreen" />
+
+    <ImageView
+        android:id="@+id/download"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="21dp"
+        android:background="@drawable/didyouknow4"
+        android:contentDescription="bb"
+        android:onClick="goToDidYouKnowScreen" />
+    
+    <ImageView
+        android:id="@+id/reademail"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="105dp"
+        android:background="@drawable/mail3"
+        android:contentDescription="bb"
+        android:onClick="goToReadEmail" />
+    
+    </RelativeLayout>
+
+    

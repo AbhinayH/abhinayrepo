@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+    
+     <include
+            android:id="@+id/include1"
+            layout="@layout/header" />
+     
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_marginTop="90dp" >
+    
+    <TextView
+        android:id="@+id/ranklabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp" 
+        
+        />
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ranklabel" 
+        android:textSize="18sp" 
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:textColor="#3b5998"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/countrylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ranklabel"
+         />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rank"
+        android:layout_toRightOf="@+id/countrylabel"  
+        android:layout_marginTop="15dp"  
+        android:layout_marginLeft="5dp"
+         android:textSize="15sp" 
+        android:textStyle="bold"   
+        />
+
+    <TextView
+        android:id="@+id/populationlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countrylabel"
+        
+        />
+
+    <EditText
+        android:id="@+id/population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country"
+        android:layout_toRightOf="@+id/populationlabel" 
+         android:minLines="5"
+        android:maxLines="15" 
+        android:scrollbars="vertical"
+        android:textSize="15sp" 
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+         android:editable="false"/>
+    
+        <ImageView
+        android:id="@+id/homeID"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/backbutton"
+        android:contentDescription="bb"
+        android:onClick="navigatetoEmailList"
+        android:layout_centerHorizontal="true" 
+        android:layout_marginTop="388dp" 
+       />
+    
+    </RelativeLayout>
+    
+ <ProgressBar 
+         android:id="@+id/progressBar"
+         style="?android:attr/progressBarStyleLarge"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:visibility="gone"
+         
+         />
+    
+ <include
+         android:id="@+id/include1"
+         layout="@layout/footer" />
+
+</RelativeLayout>

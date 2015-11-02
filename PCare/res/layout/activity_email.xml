@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:orientation="vertical"
+   android:background="#fff" >
+   
+    <include
+            android:id="@+id/include1"
+            layout="@layout/header" />
+   
+        
+   <EditText
+       android:id="@+id/recipient"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:ems="10"
+       android:inputType="textEmailAddress" 
+        android:textColorHint="#778899"
+        android:textColor="#808080"
+       android:hint="Recipient"
+       android:layout_marginTop="5dp" />
+
+   <EditText
+       android:id="@+id/subject"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:ems="10"
+        android:textColor="#808080"
+         android:textColorHint="#778899"
+       android:hint="Subject" />
+
+   <EditText
+       android:id="@+id/body"
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:ems="10"
+        android:textColor="#808080"
+         android:textColorHint="#778899"
+       android:hint="Message body" />
+
+   <Button
+       android:id="@+id/sendEmail"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:textColor="#fff"
+       android:background="#3b5998"
+       android:text="Compose an email" />
+   
+   
+</LinearLayout>
